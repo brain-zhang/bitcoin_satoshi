@@ -6,6 +6,842 @@
 --------------------Configuration: bitcoin - Win32 Release--------------------
 </h3>
 <h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2C.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "include" /I "include\boost-1_34_1" /I "include\db-4.7.25" /I "include\mswd" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "__WXMSW__" /D "NOPCH" /Fp"Release/bitcoin.pch" /YX /Fo"Release/" /Fd"Release/" /FD /Zm300 /c 
+"E:\bitcoin\db.cpp"
+"E:\bitcoin\irc.cpp"
+"E:\bitcoin\main.cpp"
+"E:\bitcoin\market.cpp"
+"E:\bitcoin\net.cpp"
+"E:\bitcoin\script.cpp"
+"E:\bitcoin\ui.cpp"
+"E:\bitcoin\util.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2C.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2D.tmp" with contents
+[
+libeay32.lib libdb47s.lib wxmsw28_richtext.lib wxmsw28_html.lib wxmsw28_core.lib wxbase28.lib wxtiff.lib wxjpeg.lib wxpng.lib wxzlib.lib wxregex.lib wxexpat.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib winspool.lib winmm.lib shell32.lib comctl32.lib ole32.lib oleaut32.lib uuid.lib rpcrt4.lib advapi32.lib ws2_32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/bitcoin.pdb" /machine:I386 /out:"Release/bitcoin.exe" /libpath:"lib" /libpath:"lib\release" 
+.\Release\db.obj
+.\Release\irc.obj
+.\Release\main.obj
+.\Release\market.obj
+.\Release\net.obj
+.\Release\script.obj
+.\Release\sha.obj
+.\Release\ui.obj
+.\Release\uibase.obj
+.\Release\util.obj
+.\Release\ui.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2D.tmp"
+<h3>Output Window</h3>
+Compiling...
+db.cpp
+E:\bitcoin\serialize.h(797) : warning C4018: '<=' : signed/unsigned mismatch
+E:\bitcoin\serialize.h(878) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+E:\bitcoin\serialize.h(1094) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+E:\bitcoin\serialize.h(1111) : warning C4018: '!=' : signed/unsigned mismatch
+E:\bitcoin\serialize.h(1120) : warning C4018: '!=' : signed/unsigned mismatch
+E:\bitcoin\util.h(110) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+E:\bitcoin\key.h(96) : warning C4018: '!=' : signed/unsigned mismatch
+E:\bitcoin\key.h(116) : warning C4018: '!=' : signed/unsigned mismatch
+E:\bitcoin\script.h(543) : warning C4018: '>=' : signed/unsigned mismatch
+E:\bitcoin\net.h(54) : warning C4305: 'initializing' : truncation from 'const int' to 'const char'
+E:\bitcoin\net.h(54) : warning C4309: 'initializing' : truncation of constant value
+E:\bitcoin\net.h(54) : warning C4305: 'initializing' : truncation from 'const int' to 'const char'
+E:\bitcoin\net.h(54) : warning C4309: 'initializing' : truncation of constant value
+E:\bitcoin\net.h(54) : warning C4305: 'initializing' : truncation from 'const int' to 'const char'
+E:\bitcoin\net.h(54) : warning C4309: 'initializing' : truncation of constant value
+E:\bitcoin\net.h(54) : warning C4305: 'initializing' : truncation from 'const int' to 'const char'
+E:\bitcoin\net.h(54) : warning C4309: 'initializing' : truncation of constant value
+E:\bitcoin\main.h(412) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\main.h(418) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\main.h(559) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\main.h(561) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\main.h(778) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\main.h(975) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\main.h(981) : warning C4018: '<' : signed/unsigned mismatch
+E:\tools\VChh\VC98\INCLUDE\xtree(72) : warning C4284: return type for 'std::_Tree<unsigned int,unsigned int,struct std::set<unsigned int,struct std::less<unsigned int>,class std::allocator<unsigned int> >::_Kfn,struct std::less<unsigned int>,class std::allocator<unsigned int> >::const_iterator::operator ->' is 'const unsigned int *' (ie; not a UDT or reference to a UDT.  Will produce errors if applied using infix notation)
+        E:\tools\VChh\VC98\INCLUDE\set(33) : see reference to class template instantiation 'std::_Tree<unsigned int,unsigned int,struct std::set<unsigned int,struct std::less<unsigned int>,class std::allocator<unsigned int> >::_Kfn,struct std::less<unsigned int>,class std::allocator<unsigned int> >' being compiled
+        E:\bitcoin\market.h(136) : see reference to class template instantiation 'std::set<unsigned int,struct std::less<unsigned int>,class std::allocator<unsigned int> >' being compiled
+E:\tools\VChh\VC98\INCLUDE\xtree(127) : warning C4284: return type for 'std::_Tree<unsigned int,unsigned int,struct std::set<unsigned int,struct std::less<unsigned int>,class std::allocator<unsigned int> >::_Kfn,struct std::less<unsigned int>,class std::allocator<unsigned int> >::iterator::operator ->' is 'unsigned int *' (ie; not a UDT or reference to a UDT.  Will produce errors if applied using infix notation)
+        E:\tools\VChh\VC98\INCLUDE\set(33) : see reference to class template instantiation 'std::_Tree<unsigned int,unsigned int,struct std::set<unsigned int,struct std::less<unsigned int>,class std::allocator<unsigned int> >::_Kfn,struct std::less<unsigned int>,class std::allocator<unsigned int> >' being compiled
+        E:\bitcoin\market.h(136) : see reference to class template instantiation 'std::set<unsigned int,struct std::less<unsigned int>,class std::allocator<unsigned int> >' being compiled
+E:\bitcoin\db.cpp(45) : warning C4800: 'char *' : forcing value to bool 'true' or 'false' (performance warning)
+E:\tools\VChh\VC98\INCLUDE\vector(180) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(178) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,class std::allocator<unsigned char> >::insert(unsigned char *,const unsigned char *,const unsigned char *)'
+E:\tools\VChh\VC98\INCLUDE\vector(191) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(178) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,class std::allocator<unsigned char> >::insert(unsigned char *,const unsigned char *,const unsigned char *)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<char,struct secure_allocator<char> >::insert(char *,unsigned int,const char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<char,struct secure_allocator<char> >::insert(char *,unsigned int,const char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(180) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(178) : while compiling class-template member function 'void __thiscall std::vector<char,struct secure_allocator<char> >::insert(char *,const char *,const char *)'
+E:\tools\VChh\VC98\INCLUDE\vector(191) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(178) : while compiling class-template member function 'void __thiscall std::vector<char,struct secure_allocator<char> >::insert(char *,const char *,const char *)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::insert(unsigned int *,unsigned int,const unsigned int &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::insert(unsigned int *,unsigned int,const unsigned int &)'
+E:\tools\VChh\VC98\INCLUDE\xlocmon(390) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\xlocmon(379) : while compiling class-template member function 'class std::ostreambuf_iterator<char,struct std::char_traits<char> > __thiscall std::money_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::_Putmfld(class std::ostreambuf_iterator<char,struct std::char_traits<char> >,bool,class std::ios_base &,char,bool,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >) const'
+E:\tools\VChh\VC98\INCLUDE\xlocmon(422) : warning C4018: '<=' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\xlocmon(379) : while compiling class-template member function 'class std::ostreambuf_iterator<char,struct std::char_traits<char> > __thiscall std::money_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::_Putmfld(class std::ostreambuf_iterator<char,struct std::char_traits<char> >,bool,class std::ios_base &,char,bool,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >) const'
+E:\tools\VChh\VC98\INCLUDE\xlocmon(390) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\xlocmon(379) : while compiling class-template member function 'class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> > __thiscall std::money_put<unsigned short,class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> > >::_Putmfld(class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> >,bool,class std::ios_base &,unsigned short,bool,class std::basic_string<unsigned short,struct std::char_traits<unsigned short>,class std::allocator<unsigned short> >) const'
+E:\tools\VChh\VC98\INCLUDE\xlocmon(422) : warning C4018: '<=' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\xlocmon(379) : while compiling class-template member function 'class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> > __thiscall std::money_put<unsigned short,class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> > >::_Putmfld(class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> >,bool,class std::ios_base &,unsigned short,bool,class std::basic_string<unsigned short,struct std::char_traits<unsigned short>,class std::allocator<unsigned short> >) const'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,class std::allocator<unsigned char> >::insert(unsigned char *,unsigned int,const unsigned char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,class std::allocator<unsigned char> >::insert(unsigned char *,unsigned int,const unsigned char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<char,class std::allocator<char> >::insert(char *,unsigned int,const char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<char,class std::allocator<char> >::insert(char *,unsigned int,const char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CDiskTxPos,class std::allocator<class CDiskTxPos> >::insert(class CDiskTxPos *,unsigned int,const class CDiskTxPos &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CDiskTxPos,class std::allocator<class CDiskTxPos> >::insert(class CDiskTxPos *,unsigned int,const class CDiskTxPos &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTransaction,class std::allocator<class CTransaction> >::insert(class CTransaction *,unsigned int,const class CTransaction &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTransaction,class std::allocator<class CTransaction> >::insert(class CTransaction *,unsigned int,const class CTransaction &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class DbTxn *,class std::allocator<class DbTxn *> >::insert(class DbTxn ** ,unsigned int,class DbTxn *const & )'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class DbTxn *,class std::allocator<class DbTxn *> >::insert(class DbTxn ** ,unsigned int,class DbTxn *const & )'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CInv,class std::allocator<class CInv> >::insert(class CInv *,unsigned int,const class CInv &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CInv,class std::allocator<class CInv> >::insert(class CInv *,unsigned int,const class CInv &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class uint256,class std::allocator<class uint256> >::insert(class uint256 *,unsigned int,const class uint256 &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class uint256,class std::allocator<class uint256> >::insert(class uint256 *,unsigned int,const class uint256 &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,struct secure_allocator<unsigned char> >::insert(unsigned char *,unsigned int,const unsigned char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,struct secure_allocator<unsigned char> >::insert(unsigned char *,unsigned int,const unsigned char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CReview,class std::allocator<class CReview> >::insert(class CReview *,unsigned int,const class CReview &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CReview,class std::allocator<class CReview> >::insert(class CReview *,unsigned int,const class CReview &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTxIn,class std::allocator<class CTxIn> >::insert(class CTxIn *,unsigned int,const class CTxIn &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTxIn,class std::allocator<class CTxIn> >::insert(class CTxIn *,unsigned int,const class CTxIn &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTxOut,class std::allocator<class CTxOut> >::insert(class CTxOut *,unsigned int,const class CTxOut &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTxOut,class std::allocator<class CTxOut> >::insert(class CTxOut *,unsigned int,const class CTxOut &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CMerkleTx,class std::allocator<class CMerkleTx> >::insert(class CMerkleTx *,unsigned int,const class CMerkleTx &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CMerkleTx,class std::allocator<class CMerkleTx> >::insert(class CMerkleTx *,unsigned int,const class CMerkleTx &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > >::insert(struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > *,unsigned int,const struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > >::insert(struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > *,unsigned int,const struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned short,class std::allocator<unsigned short> >::insert(unsigned short *,unsigned int,const unsigned short &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned short,class std::allocator<unsigned short> >::insert(unsigned short *,unsigned int,const unsigned short &)'
+irc.cpp
+E:\tools\VChh\VC98\INCLUDE\vector(180) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(178) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,class std::allocator<unsigned char> >::insert(unsigned char *,const unsigned char *,const unsigned char *)'
+E:\tools\VChh\VC98\INCLUDE\vector(191) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(178) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,class std::allocator<unsigned char> >::insert(unsigned char *,const unsigned char *,const unsigned char *)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<char,struct secure_allocator<char> >::insert(char *,unsigned int,const char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<char,struct secure_allocator<char> >::insert(char *,unsigned int,const char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(180) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(178) : while compiling class-template member function 'void __thiscall std::vector<char,struct secure_allocator<char> >::insert(char *,const char *,const char *)'
+E:\tools\VChh\VC98\INCLUDE\vector(191) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(178) : while compiling class-template member function 'void __thiscall std::vector<char,struct secure_allocator<char> >::insert(char *,const char *,const char *)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::insert(unsigned int *,unsigned int,const unsigned int &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::insert(unsigned int *,unsigned int,const unsigned int &)'
+E:\tools\VChh\VC98\INCLUDE\xlocmon(390) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\xlocmon(379) : while compiling class-template member function 'class std::ostreambuf_iterator<char,struct std::char_traits<char> > __thiscall std::money_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::_Putmfld(class std::ostreambuf_iterator<char,struct std::char_traits<char> >,bool,class std::ios_base &,char,bool,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >) const'
+E:\tools\VChh\VC98\INCLUDE\xlocmon(422) : warning C4018: '<=' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\xlocmon(379) : while compiling class-template member function 'class std::ostreambuf_iterator<char,struct std::char_traits<char> > __thiscall std::money_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::_Putmfld(class std::ostreambuf_iterator<char,struct std::char_traits<char> >,bool,class std::ios_base &,char,bool,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >) const'
+E:\tools\VChh\VC98\INCLUDE\xlocmon(390) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\xlocmon(379) : while compiling class-template member function 'class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> > __thiscall std::money_put<unsigned short,class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> > >::_Putmfld(class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> >,bool,class std::ios_base &,unsigned short,bool,class std::basic_string<unsigned short,struct std::char_traits<unsigned short>,class std::allocator<unsigned short> >) const'
+E:\tools\VChh\VC98\INCLUDE\xlocmon(422) : warning C4018: '<=' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\xlocmon(379) : while compiling class-template member function 'class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> > __thiscall std::money_put<unsigned short,class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> > >::_Putmfld(class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> >,bool,class std::ios_base &,unsigned short,bool,class std::basic_string<unsigned short,struct std::char_traits<unsigned short>,class std::allocator<unsigned short> >) const'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,class std::allocator<unsigned char> >::insert(unsigned char *,unsigned int,const unsigned char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,class std::allocator<unsigned char> >::insert(unsigned char *,unsigned int,const unsigned char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<char,class std::allocator<char> >::insert(char *,unsigned int,const char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<char,class std::allocator<char> >::insert(char *,unsigned int,const char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CDiskTxPos,class std::allocator<class CDiskTxPos> >::insert(class CDiskTxPos *,unsigned int,const class CDiskTxPos &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CDiskTxPos,class std::allocator<class CDiskTxPos> >::insert(class CDiskTxPos *,unsigned int,const class CDiskTxPos &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class DbTxn *,class std::allocator<class DbTxn *> >::insert(class DbTxn ** ,unsigned int,class DbTxn *const & )'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class DbTxn *,class std::allocator<class DbTxn *> >::insert(class DbTxn ** ,unsigned int,class DbTxn *const & )'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CInv,class std::allocator<class CInv> >::insert(class CInv *,unsigned int,const class CInv &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CInv,class std::allocator<class CInv> >::insert(class CInv *,unsigned int,const class CInv &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class uint256,class std::allocator<class uint256> >::insert(class uint256 *,unsigned int,const class uint256 &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class uint256,class std::allocator<class uint256> >::insert(class uint256 *,unsigned int,const class uint256 &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,struct secure_allocator<unsigned char> >::insert(unsigned char *,unsigned int,const unsigned char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,struct secure_allocator<unsigned char> >::insert(unsigned char *,unsigned int,const unsigned char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTxIn,class std::allocator<class CTxIn> >::insert(class CTxIn *,unsigned int,const class CTxIn &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTxIn,class std::allocator<class CTxIn> >::insert(class CTxIn *,unsigned int,const class CTxIn &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTxOut,class std::allocator<class CTxOut> >::insert(class CTxOut *,unsigned int,const class CTxOut &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTxOut,class std::allocator<class CTxOut> >::insert(class CTxOut *,unsigned int,const class CTxOut &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTransaction,class std::allocator<class CTransaction> >::insert(class CTransaction *,unsigned int,const class CTransaction &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTransaction,class std::allocator<class CTransaction> >::insert(class CTransaction *,unsigned int,const class CTransaction &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CMerkleTx,class std::allocator<class CMerkleTx> >::insert(class CMerkleTx *,unsigned int,const class CMerkleTx &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CMerkleTx,class std::allocator<class CMerkleTx> >::insert(class CMerkleTx *,unsigned int,const class CMerkleTx &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > >::insert(struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > *,unsigned int,const struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > >::insert(struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > *,unsigned int,const struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned short,class std::allocator<unsigned short> >::insert(unsigned short *,unsigned int,const unsigned short &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned short,class std::allocator<unsigned short> >::insert(unsigned short *,unsigned int,const unsigned short &)'
+main.cpp
+E:\bitcoin\main.cpp(312) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\main.cpp(315) : warning C4018: '==' : signed/unsigned mismatch
+E:\bitcoin\main.cpp(356) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\main.cpp(430) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\main.cpp(441) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\main.cpp(490) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\main.cpp(779) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\main.cpp(883) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\main.cpp(1020) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\main.cpp(1030) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\main.cpp(1171) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\main.cpp(1277) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\main.cpp(1574) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\main.cpp(1584) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\main.cpp(1611) : warning C4800: 'unsigned int' : forcing value to bool 'true' or 'false' (performance warning)
+E:\bitcoin\main.cpp(1706) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\main.cpp(1899) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\main.cpp(2177) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\main.cpp(2189) : warning C4018: '<' : signed/unsigned mismatch
+E:\tools\VChh\VC98\INCLUDE\xtree(72) : warning C4284: return type for 'std::_Tree<class CWalletTx *,class CWalletTx *,struct std::set<class CWalletTx *,struct std::less<class CWalletTx *>,class std::allocator<class CWalletTx *> >::_Kfn,struct std::less<class CWalletTx *>,class std::allocator<class CWalletTx *> >::const_iterator::operator ->' is 'class CWalletTx *const * ' (ie; not a UDT or reference to a UDT.  Will produce errors if applied using infix notation)
+        E:\tools\VChh\VC98\INCLUDE\set(33) : see reference to class template instantiation 'std::_Tree<class CWalletTx *,class CWalletTx *,struct std::set<class CWalletTx *,struct std::less<class CWalletTx *>,class std::allocator<class CWalletTx *> >::_Kfn,struct std::less<class CWalletTx *>,class std::allocator<class CWalletTx *> >' being compiled
+        E:\bitcoin\main.cpp(2435) : see reference to class template instantiation 'std::set<class CWalletTx *,struct std::less<class CWalletTx *>,class std::allocator<class CWalletTx *> >' being compiled
+E:\tools\VChh\VC98\INCLUDE\xtree(127) : warning C4284: return type for 'std::_Tree<class CWalletTx *,class CWalletTx *,struct std::set<class CWalletTx *,struct std::less<class CWalletTx *>,class std::allocator<class CWalletTx *> >::_Kfn,struct std::less<class CWalletTx *>,class std::allocator<class CWalletTx *> >::iterator::operator ->' is 'class CWalletTx ** ' (ie; not a UDT or reference to a UDT.  Will produce errors if applied using infix notation)
+        E:\tools\VChh\VC98\INCLUDE\set(33) : see reference to class template instantiation 'std::_Tree<class CWalletTx *,class CWalletTx *,struct std::set<class CWalletTx *,struct std::less<class CWalletTx *>,class std::allocator<class CWalletTx *> >::_Kfn,struct std::less<class CWalletTx *>,class std::allocator<class CWalletTx *> >' being compiled
+        E:\bitcoin\main.cpp(2435) : see reference to class template instantiation 'std::set<class CWalletTx *,struct std::less<class CWalletTx *>,class std::allocator<class CWalletTx *> >' being compiled
+E:\bitcoin\main.cpp(2492) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\main.cpp(2519) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\main.cpp(2525) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\main.cpp(2588) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\main.cpp(2595) : warning C4018: '<' : signed/unsigned mismatch
+E:\tools\VChh\VC98\INCLUDE\vector(180) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(178) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,class std::allocator<unsigned char> >::insert(unsigned char *,const unsigned char *,const unsigned char *)'
+E:\tools\VChh\VC98\INCLUDE\vector(191) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(178) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,class std::allocator<unsigned char> >::insert(unsigned char *,const unsigned char *,const unsigned char *)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<char,struct secure_allocator<char> >::insert(char *,unsigned int,const char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<char,struct secure_allocator<char> >::insert(char *,unsigned int,const char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(180) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(178) : while compiling class-template member function 'void __thiscall std::vector<char,struct secure_allocator<char> >::insert(char *,const char *,const char *)'
+E:\tools\VChh\VC98\INCLUDE\vector(191) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(178) : while compiling class-template member function 'void __thiscall std::vector<char,struct secure_allocator<char> >::insert(char *,const char *,const char *)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::insert(unsigned int *,unsigned int,const unsigned int &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::insert(unsigned int *,unsigned int,const unsigned int &)'
+E:\tools\VChh\VC98\INCLUDE\xlocmon(390) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\xlocmon(379) : while compiling class-template member function 'class std::ostreambuf_iterator<char,struct std::char_traits<char> > __thiscall std::money_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::_Putmfld(class std::ostreambuf_iterator<char,struct std::char_traits<char> >,bool,class std::ios_base &,char,bool,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >) const'
+E:\tools\VChh\VC98\INCLUDE\xlocmon(422) : warning C4018: '<=' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\xlocmon(379) : while compiling class-template member function 'class std::ostreambuf_iterator<char,struct std::char_traits<char> > __thiscall std::money_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::_Putmfld(class std::ostreambuf_iterator<char,struct std::char_traits<char> >,bool,class std::ios_base &,char,bool,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >) const'
+E:\tools\VChh\VC98\INCLUDE\xlocmon(390) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\xlocmon(379) : while compiling class-template member function 'class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> > __thiscall std::money_put<unsigned short,class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> > >::_Putmfld(class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> >,bool,class std::ios_base &,unsigned short,bool,class std::basic_string<unsigned short,struct std::char_traits<unsigned short>,class std::allocator<unsigned short> >) const'
+E:\tools\VChh\VC98\INCLUDE\xlocmon(422) : warning C4018: '<=' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\xlocmon(379) : while compiling class-template member function 'class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> > __thiscall std::money_put<unsigned short,class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> > >::_Putmfld(class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> >,bool,class std::ios_base &,unsigned short,bool,class std::basic_string<unsigned short,struct std::char_traits<unsigned short>,class std::allocator<unsigned short> >) const'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,class std::allocator<unsigned char> >::insert(unsigned char *,unsigned int,const unsigned char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,class std::allocator<unsigned char> >::insert(unsigned char *,unsigned int,const unsigned char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<char,class std::allocator<char> >::insert(char *,unsigned int,const char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<char,class std::allocator<char> >::insert(char *,unsigned int,const char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTxIn,class std::allocator<class CTxIn> >::insert(class CTxIn *,unsigned int,const class CTxIn &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTxIn,class std::allocator<class CTxIn> >::insert(class CTxIn *,unsigned int,const class CTxIn &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTxOut,class std::allocator<class CTxOut> >::insert(class CTxOut *,unsigned int,const class CTxOut &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTxOut,class std::allocator<class CTxOut> >::insert(class CTxOut *,unsigned int,const class CTxOut &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CDiskTxPos,class std::allocator<class CDiskTxPos> >::insert(class CDiskTxPos *,unsigned int,const class CDiskTxPos &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CDiskTxPos,class std::allocator<class CDiskTxPos> >::insert(class CDiskTxPos *,unsigned int,const class CDiskTxPos &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class DbTxn *,class std::allocator<class DbTxn *> >::insert(class DbTxn ** ,unsigned int,class DbTxn *const & )'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class DbTxn *,class std::allocator<class DbTxn *> >::insert(class DbTxn ** ,unsigned int,class DbTxn *const & )'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CAddress,class std::allocator<class CAddress> >::insert(class CAddress *,unsigned int,const class CAddress &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CAddress,class std::allocator<class CAddress> >::insert(class CAddress *,unsigned int,const class CAddress &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CInv,class std::allocator<class CInv> >::insert(class CInv *,unsigned int,const class CInv &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CInv,class std::allocator<class CInv> >::insert(class CInv *,unsigned int,const class CInv &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class uint256,class std::allocator<class uint256> >::insert(class uint256 *,unsigned int,const class uint256 &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class uint256,class std::allocator<class uint256> >::insert(class uint256 *,unsigned int,const class uint256 &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CMerkleTx,class std::allocator<class CMerkleTx> >::insert(class CMerkleTx *,unsigned int,const class CMerkleTx &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CMerkleTx,class std::allocator<class CMerkleTx> >::insert(class CMerkleTx *,unsigned int,const class CMerkleTx &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTransaction,class std::allocator<class CTransaction> >::insert(class CTransaction *,unsigned int,const class CTransaction &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTransaction,class std::allocator<class CTransaction> >::insert(class CTransaction *,unsigned int,const class CTransaction &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<struct std::pair<class uint256,bool>,class std::allocator<struct std::pair<class uint256,bool> > >::insert(struct std::pair<class uint256,bool> *,unsigned int,const struct std::pair<class uint256,bool> &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<struct std::pair<class uint256,bool>,class std::allocator<struct std::pair<class uint256,bool> > >::insert(struct std::pair<class uint256,bool> *,unsigned int,const struct std::pair<class uint256,bool> &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CBlockIndex *,class std::allocator<class CBlockIndex *> >::insert(class CBlockIndex ** ,unsigned int,class CBlockIndex *const & )'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CBlockIndex *,class std::allocator<class CBlockIndex *> >::insert(class CBlockIndex ** ,unsigned int,class CBlockIndex *const & )'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<struct std::pair<int,class CBlockIndex *>,class std::allocator<struct std::pair<int,class CBlockIndex *> > >::insert(struct std::pair<int,class CBlockIndex *> *,unsigned int,const struct std::pair<int,class CBlockIndex *> &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<struct std::pair<int,class CBlockIndex *>,class std::allocator<struct std::pair<int,class CBlockIndex *> > >::insert(struct std::pair<int,class CBlockIndex *> *,unsigned int,const struct std::pair<int,class CBlockIndex *> &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<struct std::pair<__int64,class CWalletTx *>,class std::allocator<struct std::pair<__int64,class CWalletTx *> > >::insert(struct std::pair<__int64,class CWalletTx *> *,unsigned int,const struct std::pair<__int64,class CWalletTx *> &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<struct std::pair<__int64,class CWalletTx *>,class std::allocator<struct std::pair<__int64,class CWalletTx *> > >::insert(struct std::pair<__int64,class CWalletTx *> *,unsigned int,const struct std::pair<__int64,class CWalletTx *> &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,struct secure_allocator<unsigned char> >::insert(unsigned char *,unsigned int,const unsigned char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,struct secure_allocator<unsigned char> >::insert(unsigned char *,unsigned int,const unsigned char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > >::insert(struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > *,unsigned int,const struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > >::insert(struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > *,unsigned int,const struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned short,class std::allocator<unsigned short> >::insert(unsigned short *,unsigned int,const unsigned short &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned short,class std::allocator<unsigned short> >::insert(unsigned short *,unsigned int,const unsigned short &)'
+market.cpp
+E:\tools\VChh\VC98\INCLUDE\vector(180) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(178) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,class std::allocator<unsigned char> >::insert(unsigned char *,const unsigned char *,const unsigned char *)'
+E:\tools\VChh\VC98\INCLUDE\vector(191) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(178) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,class std::allocator<unsigned char> >::insert(unsigned char *,const unsigned char *,const unsigned char *)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<char,struct secure_allocator<char> >::insert(char *,unsigned int,const char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<char,struct secure_allocator<char> >::insert(char *,unsigned int,const char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(180) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(178) : while compiling class-template member function 'void __thiscall std::vector<char,struct secure_allocator<char> >::insert(char *,const char *,const char *)'
+E:\tools\VChh\VC98\INCLUDE\vector(191) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(178) : while compiling class-template member function 'void __thiscall std::vector<char,struct secure_allocator<char> >::insert(char *,const char *,const char *)'
+E:\tools\VChh\VC98\INCLUDE\vector(180) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(178) : while compiling class-template member function 'void __thiscall std::vector<unsigned short,class std::allocator<unsigned short> >::insert(unsigned short *,const unsigned short *,const unsigned short *)'
+E:\tools\VChh\VC98\INCLUDE\vector(191) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(178) : while compiling class-template member function 'void __thiscall std::vector<unsigned short,class std::allocator<unsigned short> >::insert(unsigned short *,const unsigned short *,const unsigned short *)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::insert(unsigned int *,unsigned int,const unsigned int &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::insert(unsigned int *,unsigned int,const unsigned int &)'
+E:\tools\VChh\VC98\INCLUDE\xlocmon(390) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\xlocmon(379) : while compiling class-template member function 'class std::ostreambuf_iterator<char,struct std::char_traits<char> > __thiscall std::money_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::_Putmfld(class std::ostreambuf_iterator<char,struct std::char_traits<char> >,bool,class std::ios_base &,char,bool,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >) const'
+E:\tools\VChh\VC98\INCLUDE\xlocmon(422) : warning C4018: '<=' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\xlocmon(379) : while compiling class-template member function 'class std::ostreambuf_iterator<char,struct std::char_traits<char> > __thiscall std::money_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::_Putmfld(class std::ostreambuf_iterator<char,struct std::char_traits<char> >,bool,class std::ios_base &,char,bool,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >) const'
+E:\tools\VChh\VC98\INCLUDE\xlocmon(390) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\xlocmon(379) : while compiling class-template member function 'class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> > __thiscall std::money_put<unsigned short,class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> > >::_Putmfld(class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> >,bool,class std::ios_base &,unsigned short,bool,class std::basic_string<unsigned short,struct std::char_traits<unsigned short>,class std::allocator<unsigned short> >) const'
+E:\tools\VChh\VC98\INCLUDE\xlocmon(422) : warning C4018: '<=' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\xlocmon(379) : while compiling class-template member function 'class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> > __thiscall std::money_put<unsigned short,class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> > >::_Putmfld(class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> >,bool,class std::ios_base &,unsigned short,bool,class std::basic_string<unsigned short,struct std::char_traits<unsigned short>,class std::allocator<unsigned short> >) const'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,class std::allocator<unsigned char> >::insert(unsigned char *,unsigned int,const unsigned char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,class std::allocator<unsigned char> >::insert(unsigned char *,unsigned int,const unsigned char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<char,class std::allocator<char> >::insert(char *,unsigned int,const char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<char,class std::allocator<char> >::insert(char *,unsigned int,const char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CDiskTxPos,class std::allocator<class CDiskTxPos> >::insert(class CDiskTxPos *,unsigned int,const class CDiskTxPos &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CDiskTxPos,class std::allocator<class CDiskTxPos> >::insert(class CDiskTxPos *,unsigned int,const class CDiskTxPos &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class DbTxn *,class std::allocator<class DbTxn *> >::insert(class DbTxn ** ,unsigned int,class DbTxn *const & )'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class DbTxn *,class std::allocator<class DbTxn *> >::insert(class DbTxn ** ,unsigned int,class DbTxn *const & )'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CInv,class std::allocator<class CInv> >::insert(class CInv *,unsigned int,const class CInv &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CInv,class std::allocator<class CInv> >::insert(class CInv *,unsigned int,const class CInv &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class uint256,class std::allocator<class uint256> >::insert(class uint256 *,unsigned int,const class uint256 &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class uint256,class std::allocator<class uint256> >::insert(class uint256 *,unsigned int,const class uint256 &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned short,class std::allocator<unsigned short> >::insert(unsigned short *,unsigned int,const unsigned short &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned short,class std::allocator<unsigned short> >::insert(unsigned short *,unsigned int,const unsigned short &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CReview,class std::allocator<class CReview> >::insert(class CReview *,unsigned int,const class CReview &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CReview,class std::allocator<class CReview> >::insert(class CReview *,unsigned int,const class CReview &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,struct secure_allocator<unsigned char> >::insert(unsigned char *,unsigned int,const unsigned char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,struct secure_allocator<unsigned char> >::insert(unsigned char *,unsigned int,const unsigned char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTxIn,class std::allocator<class CTxIn> >::insert(class CTxIn *,unsigned int,const class CTxIn &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTxIn,class std::allocator<class CTxIn> >::insert(class CTxIn *,unsigned int,const class CTxIn &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTxOut,class std::allocator<class CTxOut> >::insert(class CTxOut *,unsigned int,const class CTxOut &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTxOut,class std::allocator<class CTxOut> >::insert(class CTxOut *,unsigned int,const class CTxOut &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTransaction,class std::allocator<class CTransaction> >::insert(class CTransaction *,unsigned int,const class CTransaction &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTransaction,class std::allocator<class CTransaction> >::insert(class CTransaction *,unsigned int,const class CTransaction &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CMerkleTx,class std::allocator<class CMerkleTx> >::insert(class CMerkleTx *,unsigned int,const class CMerkleTx &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CMerkleTx,class std::allocator<class CMerkleTx> >::insert(class CMerkleTx *,unsigned int,const class CMerkleTx &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > >::insert(struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > *,unsigned int,const struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > >::insert(struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > *,unsigned int,const struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > &)'
+net.cpp
+E:\bitcoin\net.cpp(224) : warning C4800: 'char' : forcing value to bool 'true' or 'false' (performance warning)
+E:\tools\VChh\VC98\INCLUDE\list(68) : warning C4284: return type for 'std::list<class CNode *,class std::allocator<class CNode *> >::const_iterator::operator ->' is 'class CNode *const * ' (ie; not a UDT or reference to a UDT.  Will produce errors if applied using infix notation)
+        E:\bitcoin\net.cpp(399) : see reference to class template instantiation 'std::list<class CNode *,class std::allocator<class CNode *> >' being compiled
+E:\tools\VChh\VC98\INCLUDE\list(103) : warning C4284: return type for 'std::list<class CNode *,class std::allocator<class CNode *> >::iterator::operator ->' is 'class CNode ** ' (ie; not a UDT or reference to a UDT.  Will produce errors if applied using infix notation)
+        E:\bitcoin\net.cpp(399) : see reference to class template instantiation 'std::list<class CNode *,class std::allocator<class CNode *> >' being compiled
+E:\bitcoin\net.cpp(479) : warning C4018: '!=' : signed/unsigned mismatch
+E:\bitcoin\net.cpp(520) : warning C4018: '<=' : signed/unsigned mismatch
+E:\bitcoin\net.cpp(522) : warning C4018: '==' : signed/unsigned mismatch
+E:\bitcoin\net.cpp(523) : warning C4018: '==' : signed/unsigned mismatch
+E:\tools\VChh\VC98\INCLUDE\vector(180) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(178) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,class std::allocator<unsigned char> >::insert(unsigned char *,const unsigned char *,const unsigned char *)'
+E:\tools\VChh\VC98\INCLUDE\vector(191) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(178) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,class std::allocator<unsigned char> >::insert(unsigned char *,const unsigned char *,const unsigned char *)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<char,struct secure_allocator<char> >::insert(char *,unsigned int,const char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<char,struct secure_allocator<char> >::insert(char *,unsigned int,const char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(180) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(178) : while compiling class-template member function 'void __thiscall std::vector<char,struct secure_allocator<char> >::insert(char *,const char *,const char *)'
+E:\tools\VChh\VC98\INCLUDE\vector(191) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(178) : while compiling class-template member function 'void __thiscall std::vector<char,struct secure_allocator<char> >::insert(char *,const char *,const char *)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::insert(unsigned int *,unsigned int,const unsigned int &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::insert(unsigned int *,unsigned int,const unsigned int &)'
+E:\tools\VChh\VC98\INCLUDE\xlocmon(390) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\xlocmon(379) : while compiling class-template member function 'class std::ostreambuf_iterator<char,struct std::char_traits<char> > __thiscall std::money_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::_Putmfld(class std::ostreambuf_iterator<char,struct std::char_traits<char> >,bool,class std::ios_base &,char,bool,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >) const'
+E:\tools\VChh\VC98\INCLUDE\xlocmon(422) : warning C4018: '<=' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\xlocmon(379) : while compiling class-template member function 'class std::ostreambuf_iterator<char,struct std::char_traits<char> > __thiscall std::money_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::_Putmfld(class std::ostreambuf_iterator<char,struct std::char_traits<char> >,bool,class std::ios_base &,char,bool,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >) const'
+E:\tools\VChh\VC98\INCLUDE\xlocmon(390) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\xlocmon(379) : while compiling class-template member function 'class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> > __thiscall std::money_put<unsigned short,class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> > >::_Putmfld(class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> >,bool,class std::ios_base &,unsigned short,bool,class std::basic_string<unsigned short,struct std::char_traits<unsigned short>,class std::allocator<unsigned short> >) const'
+E:\tools\VChh\VC98\INCLUDE\xlocmon(422) : warning C4018: '<=' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\xlocmon(379) : while compiling class-template member function 'class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> > __thiscall std::money_put<unsigned short,class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> > >::_Putmfld(class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> >,bool,class std::ios_base &,unsigned short,bool,class std::basic_string<unsigned short,struct std::char_traits<unsigned short>,class std::allocator<unsigned short> >) const'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,class std::allocator<unsigned char> >::insert(unsigned char *,unsigned int,const unsigned char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,class std::allocator<unsigned char> >::insert(unsigned char *,unsigned int,const unsigned char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<char,class std::allocator<char> >::insert(char *,unsigned int,const char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<char,class std::allocator<char> >::insert(char *,unsigned int,const char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CDiskTxPos,class std::allocator<class CDiskTxPos> >::insert(class CDiskTxPos *,unsigned int,const class CDiskTxPos &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CDiskTxPos,class std::allocator<class CDiskTxPos> >::insert(class CDiskTxPos *,unsigned int,const class CDiskTxPos &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class DbTxn *,class std::allocator<class DbTxn *> >::insert(class DbTxn ** ,unsigned int,class DbTxn *const & )'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class DbTxn *,class std::allocator<class DbTxn *> >::insert(class DbTxn ** ,unsigned int,class DbTxn *const & )'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CNode *,class std::allocator<class CNode *> >::insert(class CNode ** ,unsigned int,class CNode *const & )'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CNode *,class std::allocator<class CNode *> >::insert(class CNode ** ,unsigned int,class CNode *const & )'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CAddress,class std::allocator<class CAddress> >::insert(class CAddress *,unsigned int,const class CAddress &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CAddress,class std::allocator<class CAddress> >::insert(class CAddress *,unsigned int,const class CAddress &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CInv,class std::allocator<class CInv> >::insert(class CInv *,unsigned int,const class CInv &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CInv,class std::allocator<class CInv> >::insert(class CInv *,unsigned int,const class CInv &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class uint256,class std::allocator<class uint256> >::insert(class uint256 *,unsigned int,const class uint256 &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class uint256,class std::allocator<class uint256> >::insert(class uint256 *,unsigned int,const class uint256 &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,struct secure_allocator<unsigned char> >::insert(unsigned char *,unsigned int,const unsigned char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,struct secure_allocator<unsigned char> >::insert(unsigned char *,unsigned int,const unsigned char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTxIn,class std::allocator<class CTxIn> >::insert(class CTxIn *,unsigned int,const class CTxIn &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTxIn,class std::allocator<class CTxIn> >::insert(class CTxIn *,unsigned int,const class CTxIn &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTxOut,class std::allocator<class CTxOut> >::insert(class CTxOut *,unsigned int,const class CTxOut &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTxOut,class std::allocator<class CTxOut> >::insert(class CTxOut *,unsigned int,const class CTxOut &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTransaction,class std::allocator<class CTransaction> >::insert(class CTransaction *,unsigned int,const class CTransaction &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTransaction,class std::allocator<class CTransaction> >::insert(class CTransaction *,unsigned int,const class CTransaction &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CMerkleTx,class std::allocator<class CMerkleTx> >::insert(class CMerkleTx *,unsigned int,const class CMerkleTx &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CMerkleTx,class std::allocator<class CMerkleTx> >::insert(class CMerkleTx *,unsigned int,const class CMerkleTx &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > >::insert(struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > *,unsigned int,const struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > >::insert(struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > *,unsigned int,const struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned short,class std::allocator<unsigned short> >::insert(unsigned short *,unsigned int,const unsigned short &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned short,class std::allocator<unsigned short> >::insert(unsigned short *,unsigned int,const unsigned short &)'
+script.cpp
+E:\bitcoin\script.cpp(333) : warning C4018: '>=' : signed/unsigned mismatch
+E:\bitcoin\script.cpp(399) : warning C4018: '>' : signed/unsigned mismatch
+E:\bitcoin\script.cpp(401) : warning C4018: '>' : signed/unsigned mismatch
+E:\bitcoin\script.cpp(420) : warning C4018: '>' : signed/unsigned mismatch
+E:\bitcoin\script.cpp(450) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\script.cpp(467) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\script.cpp(472) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\script.cpp(477) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\script.cpp(733) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\script.cpp(741) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\script.cpp(749) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\script.cpp(832) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\script.cpp(843) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\script.cpp(844) : warning C4018: '!=' : signed/unsigned mismatch
+E:\bitcoin\script.cpp(857) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\script.cpp(861) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\script.cpp(862) : warning C4018: '!=' : signed/unsigned mismatch
+E:\tools\VChh\VC98\INCLUDE\vector(180) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(178) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,class std::allocator<unsigned char> >::insert(unsigned char *,const unsigned char *,const unsigned char *)'
+E:\tools\VChh\VC98\INCLUDE\vector(191) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(178) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,class std::allocator<unsigned char> >::insert(unsigned char *,const unsigned char *,const unsigned char *)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<char,struct secure_allocator<char> >::insert(char *,unsigned int,const char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<char,struct secure_allocator<char> >::insert(char *,unsigned int,const char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(180) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(178) : while compiling class-template member function 'void __thiscall std::vector<char,struct secure_allocator<char> >::insert(char *,const char *,const char *)'
+E:\tools\VChh\VC98\INCLUDE\vector(191) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(178) : while compiling class-template member function 'void __thiscall std::vector<char,struct secure_allocator<char> >::insert(char *,const char *,const char *)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::insert(unsigned int *,unsigned int,const unsigned int &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::insert(unsigned int *,unsigned int,const unsigned int &)'
+E:\tools\VChh\VC98\INCLUDE\xlocmon(390) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\xlocmon(379) : while compiling class-template member function 'class std::ostreambuf_iterator<char,struct std::char_traits<char> > __thiscall std::money_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::_Putmfld(class std::ostreambuf_iterator<char,struct std::char_traits<char> >,bool,class std::ios_base &,char,bool,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >) const'
+E:\tools\VChh\VC98\INCLUDE\xlocmon(422) : warning C4018: '<=' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\xlocmon(379) : while compiling class-template member function 'class std::ostreambuf_iterator<char,struct std::char_traits<char> > __thiscall std::money_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::_Putmfld(class std::ostreambuf_iterator<char,struct std::char_traits<char> >,bool,class std::ios_base &,char,bool,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >) const'
+E:\tools\VChh\VC98\INCLUDE\xlocmon(390) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\xlocmon(379) : while compiling class-template member function 'class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> > __thiscall std::money_put<unsigned short,class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> > >::_Putmfld(class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> >,bool,class std::ios_base &,unsigned short,bool,class std::basic_string<unsigned short,struct std::char_traits<unsigned short>,class std::allocator<unsigned short> >) const'
+E:\tools\VChh\VC98\INCLUDE\xlocmon(422) : warning C4018: '<=' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\xlocmon(379) : while compiling class-template member function 'class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> > __thiscall std::money_put<unsigned short,class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> > >::_Putmfld(class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> >,bool,class std::ios_base &,unsigned short,bool,class std::basic_string<unsigned short,struct std::char_traits<unsigned short>,class std::allocator<unsigned short> >) const'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,class std::allocator<unsigned char> >::insert(unsigned char *,unsigned int,const unsigned char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,class std::allocator<unsigned char> >::insert(unsigned char *,unsigned int,const unsigned char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<char,class std::allocator<char> >::insert(char *,unsigned int,const char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<char,class std::allocator<char> >::insert(char *,unsigned int,const char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class std::vector<unsigned char,class std::allocator<unsigned char> >,class std::allocator<class std::vector<unsigned char,class std::allocator<unsigned char> > > >::insert(class std::vector<unsigned char,class std::allocator<unsigned char> > *,unsigned int,const class std::vector<unsigned char,class std::allocator<unsigned char> > &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class std::vector<unsigned char,class std::allocator<unsigned char> >,class std::allocator<class std::vector<unsigned char,class std::allocator<unsigned char> > > >::insert(class std::vector<unsigned char,class std::allocator<unsigned char> > *,unsigned int,const class std::vector<unsigned char,class std::allocator<unsigned char> > &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTxIn,class std::allocator<class CTxIn> >::insert(class CTxIn *,unsigned int,const class CTxIn &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTxIn,class std::allocator<class CTxIn> >::insert(class CTxIn *,unsigned int,const class CTxIn &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTxOut,class std::allocator<class CTxOut> >::insert(class CTxOut *,unsigned int,const class CTxOut &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTxOut,class std::allocator<class CTxOut> >::insert(class CTxOut *,unsigned int,const class CTxOut &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CDiskTxPos,class std::allocator<class CDiskTxPos> >::insert(class CDiskTxPos *,unsigned int,const class CDiskTxPos &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CDiskTxPos,class std::allocator<class CDiskTxPos> >::insert(class CDiskTxPos *,unsigned int,const class CDiskTxPos &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class DbTxn *,class std::allocator<class DbTxn *> >::insert(class DbTxn ** ,unsigned int,class DbTxn *const & )'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class DbTxn *,class std::allocator<class DbTxn *> >::insert(class DbTxn ** ,unsigned int,class DbTxn *const & )'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CInv,class std::allocator<class CInv> >::insert(class CInv *,unsigned int,const class CInv &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CInv,class std::allocator<class CInv> >::insert(class CInv *,unsigned int,const class CInv &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class uint256,class std::allocator<class uint256> >::insert(class uint256 *,unsigned int,const class uint256 &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class uint256,class std::allocator<class uint256> >::insert(class uint256 *,unsigned int,const class uint256 &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<bool,class std::allocator<bool> >::insert(bool *,unsigned int,const bool &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<bool,class std::allocator<bool> >::insert(bool *,unsigned int,const bool &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CScript,class std::allocator<class CScript> >::insert(class CScript *,unsigned int,const class CScript &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CScript,class std::allocator<class CScript> >::insert(class CScript *,unsigned int,const class CScript &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<struct std::pair<enum opcodetype,class std::vector<unsigned char,class std::allocator<unsigned char> > >,class std::allocator<struct std::pair<enum opcodetype,class std::vector<unsigned char,class std::allocator<unsigned char> > > > >::insert(struct std::pair<enum opcodetype,class std::vector<unsigned char,class std::allocator<unsigned char> > > *,unsigned int,const struct std::pair<enum opcodetype,class std::vector<unsigned char,class std::allocator<unsigned char> > > &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<struct std::pair<enum opcodetype,class std::vector<unsigned char,class std::allocator<unsigned char> > >,class std::allocator<struct std::pair<enum opcodetype,class std::vector<unsigned char,class std::allocator<unsigned char> > > > >::insert(struct std::pair<enum opcodetype,class std::vector<unsigned char,class std::allocator<unsigned char> > > *,unsigned int,const struct std::pair<enum opcodetype,class std::vector<unsigned char,class std::allocator<unsigned char> > > &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,struct secure_allocator<unsigned char> >::insert(unsigned char *,unsigned int,const unsigned char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,struct secure_allocator<unsigned char> >::insert(unsigned char *,unsigned int,const unsigned char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTransaction,class std::allocator<class CTransaction> >::insert(class CTransaction *,unsigned int,const class CTransaction &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTransaction,class std::allocator<class CTransaction> >::insert(class CTransaction *,unsigned int,const class CTransaction &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CMerkleTx,class std::allocator<class CMerkleTx> >::insert(class CMerkleTx *,unsigned int,const class CMerkleTx &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CMerkleTx,class std::allocator<class CMerkleTx> >::insert(class CMerkleTx *,unsigned int,const class CMerkleTx &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > >::insert(struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > *,unsigned int,const struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > >::insert(struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > *,unsigned int,const struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned short,class std::allocator<unsigned short> >::insert(unsigned short *,unsigned int,const unsigned short &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned short,class std::allocator<unsigned short> >::insert(unsigned short *,unsigned int,const unsigned short &)'
+ui.cpp
+E:\tools\VChh\VC98\INCLUDE\xtree(72) : warning C4284: return type for 'std::_Tree<void *,void *,struct std::set<void *,struct std::less<void *>,class std::allocator<void *> >::_Kfn,struct std::less<void *>,class std::allocator<void *> >::const_iterator::operator ->' is 'void *const * ' (ie; not a UDT or reference to a UDT.  Will produce errors if applied using infix notation)
+        E:\tools\VChh\VC98\INCLUDE\set(33) : see reference to class template instantiation 'std::_Tree<void *,void *,struct std::set<void *,struct std::less<void *>,class std::allocator<void *> >::_Kfn,struct std::less<void *>,class std::allocator<void *> >' being compiled
+        E:\bitcoin\ui.cpp(186) : see reference to class template instantiation 'std::set<void *,struct std::less<void *>,class std::allocator<void *> >' being compiled
+E:\tools\VChh\VC98\INCLUDE\xtree(127) : warning C4284: return type for 'std::_Tree<void *,void *,struct std::set<void *,struct std::less<void *>,class std::allocator<void *> >::_Kfn,struct std::less<void *>,class std::allocator<void *> >::iterator::operator ->' is 'void ** ' (ie; not a UDT or reference to a UDT.  Will produce errors if applied using infix notation)
+        E:\tools\VChh\VC98\INCLUDE\set(33) : see reference to class template instantiation 'std::_Tree<void *,void *,struct std::set<void *,struct std::less<void *>,class std::allocator<void *> >::_Kfn,struct std::less<void *>,class std::allocator<void *> >' being compiled
+        E:\bitcoin\ui.cpp(186) : see reference to class template instantiation 'std::set<void *,struct std::less<void *>,class std::allocator<void *> >' being compiled
+E:\bitcoin\ui.cpp(204) : warning C4800: 'unsigned int' : forcing value to bool 'true' or 'false' (performance warning)
+E:\bitcoin\ui.cpp(281) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+E:\bitcoin\ui.cpp(552) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\ui.cpp(696) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\ui.cpp(2352) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\ui.cpp(2583) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\ui.cpp(2641) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\ui.cpp(2731) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\ui.cpp(2902) : warning C4018: '<' : signed/unsigned mismatch
+E:\bitcoin\ui.cpp(3096) : warning C4541: 'typeid' used on polymorphic type 'class exception' with /GR-; unpredictable behavior may result
+E:\bitcoin\ui.cpp(3121) : warning C4541: 'typeid' used on polymorphic type 'class exception' with /GR-; unpredictable behavior may result
+E:\tools\VChh\VC98\INCLUDE\vector(180) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(178) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,class std::allocator<unsigned char> >::insert(unsigned char *,const unsigned char *,const unsigned char *)'
+E:\tools\VChh\VC98\INCLUDE\vector(191) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(178) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,class std::allocator<unsigned char> >::insert(unsigned char *,const unsigned char *,const unsigned char *)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<char,struct secure_allocator<char> >::insert(char *,unsigned int,const char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<char,struct secure_allocator<char> >::insert(char *,unsigned int,const char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(180) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(178) : while compiling class-template member function 'void __thiscall std::vector<char,struct secure_allocator<char> >::insert(char *,const char *,const char *)'
+E:\tools\VChh\VC98\INCLUDE\vector(191) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(178) : while compiling class-template member function 'void __thiscall std::vector<char,struct secure_allocator<char> >::insert(char *,const char *,const char *)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::insert(unsigned int *,unsigned int,const unsigned int &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::insert(unsigned int *,unsigned int,const unsigned int &)'
+E:\tools\VChh\VC98\INCLUDE\xlocmon(390) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\xlocmon(379) : while compiling class-template member function 'class std::ostreambuf_iterator<char,struct std::char_traits<char> > __thiscall std::money_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::_Putmfld(class std::ostreambuf_iterator<char,struct std::char_traits<char> >,bool,class std::ios_base &,char,bool,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >) const'
+E:\tools\VChh\VC98\INCLUDE\xlocmon(422) : warning C4018: '<=' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\xlocmon(379) : while compiling class-template member function 'class std::ostreambuf_iterator<char,struct std::char_traits<char> > __thiscall std::money_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::_Putmfld(class std::ostreambuf_iterator<char,struct std::char_traits<char> >,bool,class std::ios_base &,char,bool,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >) const'
+E:\tools\VChh\VC98\INCLUDE\xlocmon(390) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\xlocmon(379) : while compiling class-template member function 'class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> > __thiscall std::money_put<unsigned short,class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> > >::_Putmfld(class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> >,bool,class std::ios_base &,unsigned short,bool,class std::basic_string<unsigned short,struct std::char_traits<unsigned short>,class std::allocator<unsigned short> >) const'
+E:\tools\VChh\VC98\INCLUDE\xlocmon(422) : warning C4018: '<=' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\xlocmon(379) : while compiling class-template member function 'class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> > __thiscall std::money_put<unsigned short,class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> > >::_Putmfld(class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> >,bool,class std::ios_base &,unsigned short,bool,class std::basic_string<unsigned short,struct std::char_traits<unsigned short>,class std::allocator<unsigned short> >) const'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,class std::allocator<unsigned char> >::insert(unsigned char *,unsigned int,const unsigned char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,class std::allocator<unsigned char> >::insert(unsigned char *,unsigned int,const unsigned char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<char,class std::allocator<char> >::insert(char *,unsigned int,const char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<char,class std::allocator<char> >::insert(char *,unsigned int,const char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CDiskTxPos,class std::allocator<class CDiskTxPos> >::insert(class CDiskTxPos *,unsigned int,const class CDiskTxPos &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CDiskTxPos,class std::allocator<class CDiskTxPos> >::insert(class CDiskTxPos *,unsigned int,const class CDiskTxPos &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class DbTxn *,class std::allocator<class DbTxn *> >::insert(class DbTxn ** ,unsigned int,class DbTxn *const & )'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class DbTxn *,class std::allocator<class DbTxn *> >::insert(class DbTxn ** ,unsigned int,class DbTxn *const & )'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CInv,class std::allocator<class CInv> >::insert(class CInv *,unsigned int,const class CInv &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CInv,class std::allocator<class CInv> >::insert(class CInv *,unsigned int,const class CInv &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class uint256,class std::allocator<class uint256> >::insert(class uint256 *,unsigned int,const class uint256 &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class uint256,class std::allocator<class uint256> >::insert(class uint256 *,unsigned int,const class uint256 &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > >::insert(struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > *,unsigned int,const struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > >::insert(struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > *,unsigned int,const struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<struct std::pair<unsigned int,class uint256>,class std::allocator<struct std::pair<unsigned int,class uint256> > >::insert(struct std::pair<unsigned int,class uint256> *,unsigned int,const struct std::pair<unsigned int,class uint256> &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<struct std::pair<unsigned int,class uint256>,class std::allocator<struct std::pair<unsigned int,class uint256> > >::insert(struct std::pair<unsigned int,class uint256> *,unsigned int,const struct std::pair<unsigned int,class uint256> &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<struct std::pair<int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > >::insert(struct std::pair<int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > *,unsigned int,const struct std::pair<int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<struct std::pair<int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > >::insert(struct std::pair<int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > *,unsigned int,const struct std::pair<int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CProduct *,class std::allocator<class CProduct *> >::insert(class CProduct ** ,unsigned int,class CProduct *const & )'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CProduct *,class std::allocator<class CProduct *> >::insert(class CProduct ** ,unsigned int,class CProduct *const & )'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CReview *,class std::allocator<class CReview *> >::insert(class CReview ** ,unsigned int,class CReview *const & )'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CReview *,class std::allocator<class CReview *> >::insert(class CReview ** ,unsigned int,class CReview *const & )'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,struct secure_allocator<unsigned char> >::insert(unsigned char *,unsigned int,const unsigned char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,struct secure_allocator<unsigned char> >::insert(unsigned char *,unsigned int,const unsigned char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTxIn,class std::allocator<class CTxIn> >::insert(class CTxIn *,unsigned int,const class CTxIn &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTxIn,class std::allocator<class CTxIn> >::insert(class CTxIn *,unsigned int,const class CTxIn &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTxOut,class std::allocator<class CTxOut> >::insert(class CTxOut *,unsigned int,const class CTxOut &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTxOut,class std::allocator<class CTxOut> >::insert(class CTxOut *,unsigned int,const class CTxOut &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTransaction,class std::allocator<class CTransaction> >::insert(class CTransaction *,unsigned int,const class CTransaction &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTransaction,class std::allocator<class CTransaction> >::insert(class CTransaction *,unsigned int,const class CTransaction &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CMerkleTx,class std::allocator<class CMerkleTx> >::insert(class CMerkleTx *,unsigned int,const class CMerkleTx &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CMerkleTx,class std::allocator<class CMerkleTx> >::insert(class CMerkleTx *,unsigned int,const class CMerkleTx &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned short,class std::allocator<unsigned short> >::insert(unsigned short *,unsigned int,const unsigned short &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned short,class std::allocator<unsigned short> >::insert(unsigned short *,unsigned int,const unsigned short &)'
+util.cpp
+E:\bitcoin\util.cpp(109) : warning C4018: '>=' : signed/unsigned mismatch
+E:\bitcoin\util.cpp(178) : warning C4541: 'typeid' used on polymorphic type 'class exception' with /GR-; unpredictable behavior may result
+E:\bitcoin\util.cpp(208) : warning C4018: '<' : signed/unsigned mismatch
+E:\tools\VChh\VC98\INCLUDE\vector(180) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(178) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,class std::allocator<unsigned char> >::insert(unsigned char *,const unsigned char *,const unsigned char *)'
+E:\tools\VChh\VC98\INCLUDE\vector(191) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(178) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,class std::allocator<unsigned char> >::insert(unsigned char *,const unsigned char *,const unsigned char *)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<char,struct secure_allocator<char> >::insert(char *,unsigned int,const char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<char,struct secure_allocator<char> >::insert(char *,unsigned int,const char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(180) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(178) : while compiling class-template member function 'void __thiscall std::vector<char,struct secure_allocator<char> >::insert(char *,const char *,const char *)'
+E:\tools\VChh\VC98\INCLUDE\vector(191) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(178) : while compiling class-template member function 'void __thiscall std::vector<char,struct secure_allocator<char> >::insert(char *,const char *,const char *)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::insert(unsigned int *,unsigned int,const unsigned int &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::insert(unsigned int *,unsigned int,const unsigned int &)'
+E:\tools\VChh\VC98\INCLUDE\xlocmon(390) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\xlocmon(379) : while compiling class-template member function 'class std::ostreambuf_iterator<char,struct std::char_traits<char> > __thiscall std::money_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::_Putmfld(class std::ostreambuf_iterator<char,struct std::char_traits<char> >,bool,class std::ios_base &,char,bool,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >) const'
+E:\tools\VChh\VC98\INCLUDE\xlocmon(422) : warning C4018: '<=' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\xlocmon(379) : while compiling class-template member function 'class std::ostreambuf_iterator<char,struct std::char_traits<char> > __thiscall std::money_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::_Putmfld(class std::ostreambuf_iterator<char,struct std::char_traits<char> >,bool,class std::ios_base &,char,bool,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >) const'
+E:\tools\VChh\VC98\INCLUDE\xlocmon(390) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\xlocmon(379) : while compiling class-template member function 'class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> > __thiscall std::money_put<unsigned short,class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> > >::_Putmfld(class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> >,bool,class std::ios_base &,unsigned short,bool,class std::basic_string<unsigned short,struct std::char_traits<unsigned short>,class std::allocator<unsigned short> >) const'
+E:\tools\VChh\VC98\INCLUDE\xlocmon(422) : warning C4018: '<=' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\xlocmon(379) : while compiling class-template member function 'class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> > __thiscall std::money_put<unsigned short,class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> > >::_Putmfld(class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> >,bool,class std::ios_base &,unsigned short,bool,class std::basic_string<unsigned short,struct std::char_traits<unsigned short>,class std::allocator<unsigned short> >) const'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,class std::allocator<unsigned char> >::insert(unsigned char *,unsigned int,const unsigned char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,class std::allocator<unsigned char> >::insert(unsigned char *,unsigned int,const unsigned char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<char,class std::allocator<char> >::insert(char *,unsigned int,const char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<char,class std::allocator<char> >::insert(char *,unsigned int,const char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CDiskTxPos,class std::allocator<class CDiskTxPos> >::insert(class CDiskTxPos *,unsigned int,const class CDiskTxPos &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CDiskTxPos,class std::allocator<class CDiskTxPos> >::insert(class CDiskTxPos *,unsigned int,const class CDiskTxPos &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > >::insert(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > *,unsigned int,const class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > >::insert(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > *,unsigned int,const class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class DbTxn *,class std::allocator<class DbTxn *> >::insert(class DbTxn ** ,unsigned int,class DbTxn *const & )'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class DbTxn *,class std::allocator<class DbTxn *> >::insert(class DbTxn ** ,unsigned int,class DbTxn *const & )'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CInv,class std::allocator<class CInv> >::insert(class CInv *,unsigned int,const class CInv &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CInv,class std::allocator<class CInv> >::insert(class CInv *,unsigned int,const class CInv &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class uint256,class std::allocator<class uint256> >::insert(class uint256 *,unsigned int,const class uint256 &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class uint256,class std::allocator<class uint256> >::insert(class uint256 *,unsigned int,const class uint256 &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<__int64,class std::allocator<__int64> >::insert(__int64 *,unsigned int,const __int64 &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<__int64,class std::allocator<__int64> >::insert(__int64 *,unsigned int,const __int64 &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,struct secure_allocator<unsigned char> >::insert(unsigned char *,unsigned int,const unsigned char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned char,struct secure_allocator<unsigned char> >::insert(unsigned char *,unsigned int,const unsigned char &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTxIn,class std::allocator<class CTxIn> >::insert(class CTxIn *,unsigned int,const class CTxIn &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTxIn,class std::allocator<class CTxIn> >::insert(class CTxIn *,unsigned int,const class CTxIn &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTxOut,class std::allocator<class CTxOut> >::insert(class CTxOut *,unsigned int,const class CTxOut &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTxOut,class std::allocator<class CTxOut> >::insert(class CTxOut *,unsigned int,const class CTxOut &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTransaction,class std::allocator<class CTransaction> >::insert(class CTransaction *,unsigned int,const class CTransaction &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CTransaction,class std::allocator<class CTransaction> >::insert(class CTransaction *,unsigned int,const class CTransaction &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CMerkleTx,class std::allocator<class CMerkleTx> >::insert(class CMerkleTx *,unsigned int,const class CMerkleTx &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<class CMerkleTx,class std::allocator<class CMerkleTx> >::insert(class CMerkleTx *,unsigned int,const class CMerkleTx &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > >::insert(struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > *,unsigned int,const struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > >::insert(struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > *,unsigned int,const struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > &)'
+E:\tools\VChh\VC98\INCLUDE\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned short,class std::allocator<unsigned short> >::insert(unsigned short *,unsigned int,const unsigned short &)'
+E:\tools\VChh\VC98\INCLUDE\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        E:\tools\VChh\VC98\INCLUDE\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned short,class std::allocator<unsigned short> >::insert(unsigned short *,unsigned int,const unsigned short &)'
+Linking...
+LINK : warning LNK4089: all references to "OLEAUT32.dll" discarded by /OPT:REF
 
 
 

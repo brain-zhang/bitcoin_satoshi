@@ -68,7 +68,7 @@ LINK32=link.exe
 # PROP Ignore_Export_Lib 0
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /YX /FD /GZ /c
-# ADD CPP /nologo /MDd /W3 /Gm /GX /ZI /Od /I "include" /I "include\boost-1_34_1" /I "include\db-4.7.25" /I "include\mswd" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "D__WXMSW__" /D "__WXDEBUG__" /YX /FD /GZ /Zm300 /c
+# ADD CPP /nologo /MDd /W1 /Gm /GR /GX /ZI /Od /I "include" /I "include\boost-1_34_1" /I "include\db-4.7.25" /I "include\mswd" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "D__WXMSW__" /D "__WXDEBUG__" /FR /YX /FD /GZ /Zm300 /c
 # ADD BASE MTL /nologo /D "_DEBUG" /mktyplib203 /win32
 # ADD MTL /nologo /D "_DEBUG" /mktyplib203 /win32
 # ADD BASE RSC /l 0x804 /d "_DEBUG"
@@ -205,6 +205,94 @@ SOURCE=.\util.h
 # Begin Group "Resource Files"
 
 # PROP Default_Filter "ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"
+# Begin Source File
+
+SOURCE=.\rc\bitcoin.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\wx\msw\blank.cur
+# End Source File
+# Begin Source File
+
+SOURCE=.\wx\msw\bullseye.cur
+# End Source File
+# Begin Source File
+
+SOURCE=.\wx\msw\cdrom.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\rc\check.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\wx\msw\computer.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\wx\msw\cross.cur
+# End Source File
+# Begin Source File
+
+SOURCE=.\wx\msw\drive.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\wx\msw\file1.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\wx\msw\floppy.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\wx\msw\folder1.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\wx\msw\folder2.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\wx\msw\hand.cur
+# End Source File
+# Begin Source File
+
+SOURCE=.\wx\msw\magnif1.cur
+# End Source File
+# Begin Source File
+
+SOURCE=.\wx\msw\pbrush.cur
+# End Source File
+# Begin Source File
+
+SOURCE=.\wx\msw\pencil.cur
+# End Source File
+# Begin Source File
+
+SOURCE=.\wx\msw\pntleft.cur
+# End Source File
+# Begin Source File
+
+SOURCE=.\wx\msw\pntright.cur
+# End Source File
+# Begin Source File
+
+SOURCE=.\wx\msw\removble.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\wx\msw\rightarr.cur
+# End Source File
+# Begin Source File
+
+SOURCE=.\wx\msw\roller.cur
+# End Source File
+# Begin Source File
+
+SOURCE=.\wx\msw\std.ico
+# End Source File
 # End Group
 # End Target
 # End Project
