@@ -295,7 +295,7 @@ CMainFrame::CMainFrame(wxWindow* parent) : CMainFrameBase(parent)
     m_toolBar->Realize();
 
     // Init column headers
-    int nDateWidth = DateTimeStr(1229413914).size() * 6 + 8;
+    int nDateWidth = DateTimeStr(1229413914).size() * 6 + 20;
     m_listCtrl->InsertColumn(0, "",             wxLIST_FORMAT_LEFT,     0);
     m_listCtrl->InsertColumn(1, "",             wxLIST_FORMAT_LEFT,     0);
     m_listCtrl->InsertColumn(2, "Status",       wxLIST_FORMAT_LEFT,    90);
@@ -1242,8 +1242,8 @@ CAboutDialog::CAboutDialog(wxWindow* parent) : CAboutDialogBase(parent)
 
     // Workaround until upgrade to wxWidgets supporting UTF-8
     wxString str = m_staticTextMain->GetLabel();
-    if (str.Find('Â') != wxNOT_FOUND)
-        str.Remove(str.Find('Â'), 1);
+    if (str.Find('?') != wxNOT_FOUND)
+        str.Remove(str.Find('?'), 1);
     m_staticTextMain->SetLabel(str);
 }
 

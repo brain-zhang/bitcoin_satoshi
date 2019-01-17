@@ -21,7 +21,8 @@ unsigned int nTransactionsUpdated = 0;
 map<COutPoint, CInPoint> mapNextTx;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-const uint256 hashGenesisBlock("0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f");
+//const uint256 hashGenesisBlock("0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f");
+const uint256 hashGenesisBlock("0x0a453de292f8b2b36b2b9f0739587bc5c547a255b61883f0fcae4d2ab43ee03f");       // by ZWW for testing
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
 uint256 hashBestChain = 0;
@@ -1466,16 +1467,27 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
         block.nTime    = 1231006505;
-        block.nBits    = 0x1d00ffff;
-        block.nNonce   = 2083236893;
+        //block.nBits    = 0x1d00ffff;          // by ZWW for testing
+        //block.nNonce   = 2083236893;
+        block.nBits    = 0x1f00ffff;
+        block.nNonce   = 32;
 
-            //// debug print, delete this later
-            printf("%s\n", block.GetHash().ToString().c_str());
-            printf("%s\n", block.hashMerkleRoot.ToString().c_str());
-            printf("%s\n", hashGenesisBlock.ToString().c_str());
-            txNew.vout[0].scriptPubKey.print();
-            block.print();
-            assert(block.hashMerkleRoot == uint256("0x4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b"));
+        /*uint256 mytarget = (~uint256(0)>>4);
+        printf("mytarget %s\n", mytarget.ToString().c_str());
+        for(unsigned int idx = 0; idx<0xffffffff; idx++){
+            block.nNonce = idx;
+            printf("%u %s\n", idx, block.GetHash().ToString().c_str());
+            if(block.GetHash() < mytarget)
+                break;
+        }*/
+
+        //// debug print, delete this later
+        printf("%s\n", block.GetHash().ToString().c_str());
+        printf("%s\n", block.hashMerkleRoot.ToString().c_str());
+        printf("%s\n", hashGenesisBlock.ToString().c_str());
+        txNew.vout[0].scriptPubKey.print();
+        block.print();
+        assert(block.hashMerkleRoot == uint256("0x4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b"));
 
         assert(block.GetHash() == hashGenesisBlock);
 
@@ -2182,7 +2194,10 @@ void BlockSHA256(const void* pin, unsigned int nBlocks, void* pout)
 
 bool BitcoinMiner()
 {
+    char chTemp[255];
+    unsigned int uHashTimes = 0;
     printf("BitcoinMiner started\n");
+    OutputDebugString("BitcoinMiner started by ZWW");
     SetThreadPriority(GetCurrentThread(), THREAD_PRIORITY_LOWEST);
 
     CKey key;
@@ -2236,6 +2251,8 @@ bool BitcoinMiner()
             unsigned int nBlockSize = 0;
             while (fFoundSomething && nBlockSize < MAX_SIZE/2)
             {
+                sprintf(chTemp, "while fFoundSomething vfAlreadyAdded[0] %d transaction number %d\n", vfAlreadyAdded[0], mapTransactions.size());
+                OutputDebugString(chTemp);
                 fFoundSomething = false;
                 unsigned int n = 0;
                 for (map<uint256, CTransaction>::iterator mi = mapTransactions.begin(); mi != mapTransactions.end(); ++mi, ++n)
@@ -2311,16 +2328,22 @@ bool BitcoinMiner()
             BlockSHA256(&tmp.block, nBlocks0, &tmp.hash1);
             BlockSHA256(&tmp.hash1, nBlocks1, &hash);
 
-
+            uHashTimes++;
+            if(uHashTimes %10000 == 0){
+                sprintf(chTemp, "hash times %u hash %s hashTarget %s\n", uHashTimes, hash.GetHex().c_str(), hashTarget.GetHex().c_str());
+                OutputDebugString(chTemp);
+            }
             if (hash <= hashTarget)
             {
+                sprintf(chTemp, "will find nonce by ZWW hash %s hashTarget %s\n", hash.GetHex().c_str(), hashTarget.GetHex().c_str());
+                OutputDebugString(chTemp);
                 pblock->nNonce = tmp.block.nNonce;
                 assert(hash == pblock->GetHash());
 
-                    //// debug print
-                    printf("BitcoinMiner:\n");
-                    printf("proof-of-work found  \n  hash: %s  \ntarget: %s\n", hash.GetHex().c_str(), hashTarget.GetHex().c_str());
-                    pblock->print();
+                //// debug print
+                printf("BitcoinMiner:\n");
+                printf("proof-of-work found  \n  hash: %s  \ntarget: %s\n", hash.GetHex().c_str(), hashTarget.GetHex().c_str());
+                pblock->print();
 
                 SetThreadPriority(GetCurrentThread(), THREAD_PRIORITY_NORMAL);
                 CRITICAL_BLOCK(cs_main)
