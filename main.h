@@ -19,7 +19,8 @@ static const int64 COIN = 100000000;
 static const int64 CENT = 1000000;
 static const int COINBASE_MATURITY = 100;
 
-static const CBigNum bnProofOfWorkLimit(~uint256(0) >> 32);
+// brain.zhang for test
+static const CBigNum bnProofOfWorkLimit(~uint256(0) >> 4);
 
 
 

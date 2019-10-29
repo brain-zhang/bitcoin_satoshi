@@ -135,8 +135,8 @@ bool GetMyExternalIP(unsigned int& ipRet)
 
 bool AddAddress(CAddrDB& addrdb, const CAddress& addr)
 {
-    if (!addr.IsRoutable())
-        return false;
+    //if (!addr.IsRoutable())       // brain.zhang for test
+    //    return false;
     if (addr.ip == addrLocalHost.ip)
         return false;
     CRITICAL_BLOCK(cs_mapAddresses)
