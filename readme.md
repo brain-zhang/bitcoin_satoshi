@@ -42,25 +42,19 @@ Dependencies
 ------------
 Libraries you need to obtain separately to build:
 
-              default path   download
-
-wxWidgets      \wxWidgets     http://www.wxwidgets.org/downloads/
-
-OpenSSL        \OpenSSL       http://www.openssl.org/source/
-
-Berkeley DB    \DB            http://www.oracle.com/technology/software/products/berkeley-db/index.html
-
-Boost          \Boost         http://www.boost.org/users/download/
+name        | default path| download
+------------| ----------- | --------
+wxWidgets   | \wxWidgets  |  http://www.wxwidgets.org/downloads/
+OpenSSL     |  \OpenSSL   |  http://www.openssl.org/source/
+Berkeley DB |  \DB        |  http://www.oracle.com/technology/software/products/berkeley-db/index.html
+Boost       |  \Boost     |  http://www.boost.org/users/download/
 
 Their licenses:
 
-wxWidgets      LGPL 2.1 with very liberal exceptions
-
-OpenSSL        Old BSD license with the problematic advertising requirement
-
-Berkeley DB    New BSD license with additional requirement that linked software must be free open source
-
-Boost          MIT-like license
+* wxWidgets:     LGPL 2.1 with very liberal exceptions
+* OpenSSL:       Old BSD license with the problematic advertising requirement
+* Berkeley DB:   New BSD license with additional requirement that linked software must be free open source
+* Boost:         MIT-like license
 
 
 OpenSSL
