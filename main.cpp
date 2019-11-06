@@ -21,7 +21,11 @@ unsigned int nTransactionsUpdated = 0;
 map<COutPoint, CInPoint> mapNextTx;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-const uint256 hashGenesisBlock("0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f");
+
+//brain.zhang for test
+//const uint256 hashGenesisBlock("0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f");
+const uint256 hashGenesisBlock("0x0a453de292f8b2b36b2b9f0739587bc5c547a255b61883f0fcae4d2ab43ee03f");
+
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
 uint256 hashBestChain = 0;
@@ -1468,6 +1472,10 @@ bool LoadBlockIndex(bool fAllowNew)
         block.nTime    = 1231006505;
         block.nBits    = 0x1d00ffff;
         block.nNonce   = 2083236893;
+
+        //brain.zhang for test
+        block.nBits    = 0x1f00ffff;
+        block.nNonce   = 32;
 
             //// debug print, delete this later
             printf("%s\n", block.GetHash().ToString().c_str());
