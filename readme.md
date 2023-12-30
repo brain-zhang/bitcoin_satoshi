@@ -1,34 +1,36 @@
-比特币v0.01版本源码整理
+Bitcoin v0.01 version source code and libs VC++6.0 Project All In One
 ======================================
 
-比特币已经运行10年了，我经历了详细的搜索，认为blockchain这个单词其实最早出自于bitcoin v0.01的代码注释中；
-
-中本聪是比特币之父，比特币是区块链之母；这一点谁也无法否认；
-
-令人感觉荒谬的是，在信息如此发达的今天，事情的本源反而隐藏到纷纷扰扰中看不清楚；
-
-作为一个比特币爱好者，我从sourceforge上整理了中本聪发布bitcoin v0.01时的原始代码；用经典的VC++6.0编译，集齐了当时依赖的所有头文件及库文件，供大家研究创世之初比特币的样子；
-
-./bin/bitcoin.exe 是我在winxp平台下，还原中本聪的原始编译环境编译出来的可执行文件，您可以运行两台虚拟机，把dll目录的文件拷贝到 C:\windows\system32 下，设置初始PEER IP地址，就可以在一个局域网内运行初版bitcoin客户端;
-
-启动步骤:
-
-1. 准备局域网内的两台虚拟机A、B
-2. 在bitcoin.exe同级目录建立addr.txt文件，里面填写对端的连接IP:PORT，如192.168.2.7:8333
-3. 分别启动A、B的bitcoin.exe
-4. 连接对方节点后启动挖矿
-5. 为了测试方便，默认将难度值调低了
-
-细读代码，就可以发现中本聪是一个熟练的MS流派C++程序员，他对于密码学、GUI编程有深入了解，但不是神；
-
-他的代码中有很多随意的东西，比如代表比特币难度的BLOCK HEADER的bits大小设置，比如初版Genius block手工构造后，没有写入到索引文件中，比如对于openssl库的理解有偏差，造成了公钥存储浪费了一些字节空间；
-
-但中本聪在代码中展现了更多的设计上的天才和实现上的严谨，从bitcoin启动寻找peer的过程中，我们看到他对这一点考虑如何的周密，这绝对是经过了长时间大量专一的思考才能得到的成果；
-
-Talk is cheap, show me your code. Just get fun.
+As a bitcoin enthusiast, I collated the original code from sourceforge when Satoshi launched bitcoin v0.01; With the classic VC++6.0 compilation, set all the header files and library files that were relied on at that time, for everyone to study the appearance of Bitcoin at the beginning of creation;
 
 
-中本聪发布0.01版声明
+
+Build
+======================================
+1. set up WinXP SP2 32bit Env
+2. set up [VC++6.0](https://github.com/brain-zhang/bitcoin_satoshi/releases/download/v0.01_compile_env/Visual.C++.6.0_simple_for_bitcoin0.1_compile_version.zip)
+3. `git clone https://github.com/brain-zhang/bitcoin_satoshi.git`
+4. open `bitcoin.dsw` by VC++6.0
+5. compile in Win32 Debug mode
+
+
+Run
+======================================
+bitcoin.exe is an executable file compiled by Satoshi Nakamoto's original compilation environment under the winxp platform. You can run two virtual machines, copy the dll directory file to C:\windows\system32, and set the initial PEER IP address. You can run the first version of the bitcoin client within a LAN;
+
+You can download bitcoin.exe and dlls in [Release](https://github.com/brain-zhang/bitcoin_satoshi/releases)
+
+Startup steps:
+
+1. Prepare two VMS A and B on the LAN
+2. Create the addr.txt file in the same directory as bitcoin.exe and fill in the file with the connection IP address of the peer end :PORT, for example, 192.168.2.7:8333
+3. Start bitcoin.exe for A and B respectively
+4. Connect the peer node and start mining
+5. For the convenience of testing, the difficulty value is lowered by default
+
+
+
+satoshi origin bitcoin v0.01-ALPHA
 ======================================
 BitCoin v0.01 ALPHA
 
