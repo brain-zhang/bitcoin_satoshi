@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin v0.01 ALPHA - Unfinished Features Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Tahoma', 'MS Sans Serif', sans-serif;
+            background: linear-gradient(180deg, #0054a6 0%, #003d79 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #000;
+        }
+
+        .demo-notice {
+            background: #ffeb3b;
+            border: 2px solid #f57c00;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .window {
+            background: #ece9d8;
+            border: 2px solid #0054e3;
+            border-radius: 8px 8px 0 0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            max-width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .title-bar {
+            background: linear-gradient(180deg, #0997ff 0%, #0053ee 50%, #0050ee 50%, #003dd6 100%);
+            padding: 5px 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            font-size: 11px;
+        }
+
+        .title-bar-text {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .title-bar-controls {
+            display: flex;
+            gap: 2px;
+        }
+
+        .title-bar-controls button {
+            width: 22px;
+            height: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            background: linear-gradient(180deg, #2d95ff 0%, #2167d5 100%);
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .title-bar-controls button:hover {
+            background: linear-gradient(180deg, #4da5ff 0%, #3177e5 100%);
+        }
+
+        .menu-bar {
+            background: #f0f0f0;
+            border-bottom: 1px solid #999;
+            padding: 3px 5px;
+            display: flex;
+            gap: 10px;
+            font-size: 11px;
+        }
+
+        .menu-item {
+            padding: 3px 8px;
+            cursor: pointer;
+        }
+
+        .menu-item:hover {
+            background: #316ac5;
+            color: white;
+        }
+
+        .toolbar {
+            background: #f0f0f0;
+            border-bottom: 1px solid #999;
+            padding: 5px;
+            display: flex;
+            gap: 3px;
+        }
+
+        .toolbar button {
+            padding: 5px 15px;
+            border: 1px solid #7a7a7a;
+            background: linear-gradient(180deg, #ffffff 0%, #e0e0e0 100%);
+            cursor: pointer;
+            font-size: 11px;
+            border-radius: 3px;
+        }
+
+        .toolbar button:hover {
+            background: linear-gradient(180deg, #f0f0f0 0%, #d0d0d0 100%);
+        }
+
+        .toolbar button:active {
+            background: linear-gradient(180deg, #d0d0d0 0%, #e0e0e0 100%);
+        }
+
+        .status-bar {
+            background: #ece9d8;
+            border-top: 1px solid #fff;
+            padding: 3px 8px;
+            font-size: 11px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .content {
+            background: white;
+            min-height: 600px;
+            padding: 10px;
+        }
+
+        .tabs {
+            display: flex;
+            background: #f0f0f0;
+            border-bottom: 2px solid #999;
+            margin: -10px -10px 10px -10px;
+        }
+
+        .tab {
+            padding: 8px 20px;
+            cursor: pointer;
+            border: 1px solid #999;
+            border-bottom: none;
+            background: #d4d0c8;
+            margin-right: 2px;
+            border-radius: 5px 5px 0 0;
+            font-size: 11px;
+        }
+
+        .tab:hover {
+            background: #e0ddd6;
+        }
+
+        .tab.active {
+            background: white;
+            border-bottom: 2px solid white;
+            margin-bottom: -2px;
+            font-weight: bold;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .balance-section {
+            background: #f5f5f5;
+            padding: 15px;
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+            border-radius: 3px;
+        }
+
+        .balance-label {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .balance-amount {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2e7d32;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 11px;
+        }
+
+        th {
+            background: #d4d0c8;
+            padding: 5px;
+            text-align: left;
+            border: 1px solid #999;
+            font-weight: bold;
+        }
+
+        td {
+            padding: 5px;
+            border: 1px solid #ddd;
+        }
+
+        tr:hover {
+            background: #e8f4fd;
+        }
+
+        .product-card {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 15px;
+            background: #fafafa;
+            border-radius: 3px;
+        }
+
+        .product-title {
+            font-size: 14px;
+            font-weight: bold;
+            color: #0066cc;
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+
+        .product-title:hover {
+            text-decoration: underline;
+        }
+
+        .product-price {
+            font-size: 16px;
+            font-weight: bold;
+            color: #2e7d32;
+            margin: 10px 0;
+        }
+
+        .product-seller {
+            font-size: 11px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .reputation {
+            display: inline-block;
+            padding: 2px 8px;
+            background: #ffc107;
+            border-radius: 3px;
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        .poker-table {
+            background: #0a5f0a;
+            border: 8px solid #8b4513;
+            border-radius: 200px;
+            padding: 40px;
+            margin: 20px auto;
+            max-width: 800px;
+            position: relative;
+            min-height: 400px;
+            box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .poker-seat {
+            position: absolute;
+            width: 100px;
+            text-align: center;
+        }
+
+        .seat-1 { top: 20px; left: 50%; transform: translateX(-50%); }
+        .seat-2 { top: 50%; right: 20px; transform: translateY(-50%); }
+        .seat-3 { bottom: 20px; right: 150px; }
+        .seat-4 { bottom: 20px; left: 150px; }
+        .seat-5 { top: 50%; left: 20px; transform: translateY(-50%); }
+
+        .player-card {
+            background: #d4d0c8;
+            border: 2px solid #666;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 10px;
+        }
+
+        .player-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .player-chips {
+            color: #2e7d32;
+            font-weight: bold;
+        }
+
+        .poker-controls {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f0f0f0;
+            border: 1px solid #999;
+            border-radius: 3px;
+        }
+
+        .poker-controls button {
+            padding: 8px 20px;
+            margin: 5px;
+            border: 1px solid #666;
+            background: linear-gradient(180deg, #ffffff 0%, #d4d0c8 100%);
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 3px;
+        }
+
+        .poker-controls button:hover {
+            background: linear-gradient(180deg, #f0f0f0 0%, #c4c0b8 100%);
+        }
+
+        .poker-controls button.action-fold {
+            background: linear-gradient(180deg, #ffcccc 0%, #ff9999 100%);
+        }
+
+        .poker-controls button.action-call {
+            background: linear-gradient(180deg, #ffffcc 0%, #ffff99 100%);
+        }
+
+        .poker-controls button.action-raise {
+            background: linear-gradient(180deg, #ccffcc 0%, #99ff99 100%);
+        }
+
+        .card {
+            display: inline-block;
+            width: 40px;
+            height: 56px;
+            background: white;
+            border: 2px solid #333;
+            border-radius: 4px;
+            margin: 2px;
+            text-align: center;
+            line-height: 52px;
+            font-size: 20px;
+            font-weight: bold;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .card.red {
+            color: #d32f2f;
+        }
+
+        .card.black {
+            color: #000;
+        }
+
+        .review {
+            border-left: 3px solid #2196f3;
+            padding: 10px;
+            margin: 10px 0;
+            background: #f5f5f5;
+        }
+
+        .review-author {
+            font-weight: bold;
+            font-size: 11px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .review-rating {
+            color: #ffc107;
+            margin-bottom: 5px;
+        }
+
+        .review-text {
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        .icon {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
+        }
+
+        .section-title {
+            font-size: 14px;
+            font-weight: bold;
+            margin: 20px 0 10px 0;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #999;
+        }
+
+        .button-group {
+            margin: 15px 0;
+        }
+
+        .button-group button {
+            padding: 8px 20px;
+            margin-right: 10px;
+            border: 1px solid #666;
+            background: linear-gradient(180deg, #ffffff 0%, #d4d0c8 100%);
+            cursor: pointer;
+            font-size: 11px;
+            border-radius: 3px;
+        }
+
+        .button-group button:hover {
+            background: linear-gradient(180deg, #f0f0f0 0%, #c4c0b8 100%);
+        }
+
+        .atom-count {
+            display: inline-block;
+            padding: 2px 6px;
+            background: #4caf50;
+            color: white;
+            border-radius: 3px;
+            font-size: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-notice">
+        ⚠️ DEMO OF UNFINISHED FEATURES - This is a recreation of planned but incomplete features from Bitcoin v0.01 Alpha ⚠️
+    </div>
+
+    <div class="window">
+        <div class="title-bar">
+            <div class="title-bar-text">
+                <span>⬢</span>
+                <span>Bitcoin v0.01 ALPHA</span>
+            </div>
+            <div class="title-bar-controls">
+                <button>_</button>
+                <button>□</button>
+                <button>✕</button>
+            </div>
+        </div>
+
+        <div class="menu-bar">
+            <div class="menu-item">File</div>
+            <div class="menu-item">Edit</div>
+            <div class="menu-item">View</div>
+            <div class="menu-item">Settings</div>
+            <div class="menu-item">Help</div>
+        </div>
+
+        <div class="toolbar">
+            <button>Send Coins</button>
+            <button>Address Book</button>
+            <button>Your Receiving Address</button>
+            <button>Options</button>
+            <button>About</button>
+        </div>
+
+        <div class="content">
+            <div class="tabs">
+                <div class="tab active" data-tab="wallet">Wallet</div>
+                <div class="tab" data-tab="transactions">All Transactions</div>
+                <div class="tab" data-tab="market">Marketplace</div>
+                <div class="tab" data-tab="poker">Poker Room</div>
+            </div>
+
+            <!-- Wallet Tab -->
+            <div class="tab-content active" id="wallet">
+                <div class="balance-section">
+                    <div class="balance-label">Your Balance:</div>
+                    <div class="balance-amount">₿ 1,234.56</div>
+                </div>
+
+                <div class="section-title">Recent Transactions</div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Status</th>
+                            <th>Date</th>
+                            <th>Description</th>
+                            <th>Debit</th>
+                            <th>Credit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>✓ Confirmed (6)</td>
+                            <td>01/03/2009 14:32</td>
+                            <td>Received with: 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa</td>
+                            <td></td>
+                            <td style="color: green; font-weight: bold;">+50.00</td>
+                        </tr>
+                        <tr>
+                            <td>✓ Confirmed (12)</td>
+                            <td>01/03/2009 11:15</td>
+                            <td>Payment to merchant</td>
+                            <td style="color: red;">-10.50</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>✓ Confirmed (24)</td>
+                            <td>01/02/2009 18:45</td>
+                            <td>Received with: 1HLoD9E4SDFFPDiYfNYnkBLQ85Y51J3Zb1</td>
+                            <td></td>
+                            <td style="color: green; font-weight: bold;">+100.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Transactions Tab -->
+            <div class="tab-content" id="transactions">
+                <div class="section-title">Transaction History</div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Status</th>
+                            <th>Date</th>
+                            <th>Description</th>
+                            <th>Debit</th>
+                            <th>Credit</th>
+                            <th>Balance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>✓ Confirmed (6)</td>
+                            <td>01/03/2009 14:32</td>
+                            <td>Received with: 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa</td>
+                            <td></td>
+                            <td style="color: green; font-weight: bold;">+50.00</td>
+                            <td>1,234.56</td>
+                        </tr>
+                        <tr>
+                            <td>✓ Confirmed (12)</td>
+                            <td>01/03/2009 11:15</td>
+                            <td>Payment to merchant</td>
+                            <td style="color: red;">-10.50</td>
+                            <td></td>
+                            <td>1,184.56</td>
+                        </tr>
+                        <tr>
+                            <td>✓ Confirmed (24)</td>
+                            <td>01/02/2009 18:45</td>
+                            <td>Received with: 1HLoD9E4SDFFPDiYfNYnkBLQ85Y51J3Zb1</td>
+                            <td></td>
+                            <td style="color: green; font-weight: bold;">+100.00</td>
+                            <td>1,195.06</td>
+                        </tr>
+                        <tr>
+                            <td>✓ Confirmed (45)</td>
+                            <td>01/02/2009 09:22</td>
+                            <td>Mining reward</td>
+                            <td></td>
+                            <td style="color: green; font-weight: bold;">+50.00</td>
+                            <td>1,095.06</td>
+                        </tr>
+                        <tr>
+                            <td>✓ Confirmed (67)</td>
+                            <td>01/01/2009 23:11</td>
+                            <td>Purchase from marketplace</td>
+                            <td style="color: red;">-5.00</td>
+                            <td></td>
+                            <td>1,045.06</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Marketplace Tab -->
+            <div class="tab-content" id="market">
+                <div class="section-title">Bitcoin Marketplace - Buy & Sell with Bitcoin</div>
+
+                <div class="button-group">
+                    <button>Post New Product</button>
+                    <button>My Listings</button>
+                    <button>My Orders</button>
+                    <button>Search Products</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-title">📚 Complete Programming Books Collection (Digital)</div>
+                    <div class="product-seller">
+                        Seller: SatoshiN <span class="reputation">⭐ 127 atoms</span>
+                    </div>
+                    <div class="product-price">₿ 15.00</div>
+                    <p style="font-size: 12px; margin: 10px 0;">
+                        Complete collection of programming books in PDF format. Includes C++, Java, Python, and more.
+                        Instant delivery via encrypted email.
+                    </p>
+                    <button>View Details</button>
+                    <button>Purchase</button>
+
+                    <div class="section-title" style="font-size: 12px; margin-top: 15px;">Recent Reviews</div>
+                    <div class="review">
+                        <div class="review-author">From: 1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2</div>
+                        <div class="review-rating">★★★★★</div>
+                        <div class="review-text">Excellent quality PDFs. Fast delivery. Highly recommended!</div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-title">💾 Vintage Computer Parts - Rare Items</div>
+                    <div class="product-seller">
+                        Seller: CryptoCollector <span class="reputation">⭐ 89 atoms</span>
+                    </div>
+                    <div class="product-price">₿ 50.00</div>
+                    <p style="font-size: 12px; margin: 10px 0;">
+                        Authentic vintage computer parts from the 1980s. Perfect for collectors.
+                        Shipping available worldwide. Escrow recommended for high-value transactions.
+                    </p>
+                    <button>View Details</button>
+                    <button>Purchase</button>
+
+                    <div class="review">
+                        <div class="review-author">From: 1JfbZRwdDHKZmuiZgYArJZhcuuzuw2HuMu</div>
+                        <div class="review-rating">★★★★☆</div>
+                        <div class="review-text">Good condition as described. Took 2 weeks to arrive but worth it.</div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-title">🎮 Custom Gaming Server Hosting - 1 Month</div>
+                    <div class="product-seller">
+                        Seller: ServerHost99 <span class="reputation">⭐ 234 atoms</span>
+                    </div>
+                    <div class="product-price">₿ 8.50</div>
+                    <p style="font-size: 12px; margin: 10px 0;">
+                        High-performance gaming server hosting. 24/7 uptime, DDoS protection, instant setup.
+                        Perfect for Minecraft, Counter-Strike, and more.
+                    </p>
+                    <button>View Details</button>
+                    <button>Purchase</button>
+                </div>
+
+                <div class="section-title">About the Marketplace</div>
+                <p style="font-size: 11px; line-height: 1.6; padding: 10px; background: #fffef0; border: 1px solid #ccc;">
+                    <strong>Atom Reputation System:</strong> The marketplace uses an "atom-based" reputation system where atoms
+                    propagate through the network of users. Each successful transaction increases a seller's atom count,
+                    building trust in the decentralized marketplace. Reviews are digitally signed and linked to Bitcoin addresses,
+                    ensuring authenticity without requiring a central authority.
+                </p>
+            </div>
+
+            <!-- Poker Room Tab -->
+            <div class="tab-content" id="poker">
+                <div class="section-title">🃏 Bitcoin Poker - Play for Real Bitcoin</div>
+
+                <div class="button-group">
+                    <button>Open New Table</button>
+                    <button>Browse Tables</button>
+                    <button>Tournament Lobby</button>
+                    <button>Cash Out</button>
+                </div>
+
+                <div style="background: #f5f5f5; padding: 15px; border: 1px solid #ccc; margin-bottom: 15px;">
+                    <strong>Table: High Stakes Hold'em #1</strong><br>
+                    <span style="font-size: 11px;">Stakes: ₿0.10 / ₿0.20 | 5 Players | Pot: ₿2.40</span>
+                </div>
+
+                <div class="poker-table">
+                    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white;">
+                        <div style="font-size: 14px; font-weight: bold; margin-bottom: 10px;">Community Cards</div>
+                        <div>
+                            <span class="card red">K♥</span>
+                            <span class="card black">Q♠</span>
+                            <span class="card red">J♦</span>
+                            <span class="card black">10♣</span>
+                            <span class="card red">9♥</span>
+                        </div>
+                        <div style="margin-top: 15px; font-size: 18px; font-weight: bold;">
+                            Pot: ₿2.40
+                        </div>
+                    </div>
+
+                    <div class="poker-seat seat-1">
+                        <div class="player-card">
+                            <div class="player-name">Dealer_123</div>
+                            <div class="player-chips">₿45.20</div>
+                            <div style="margin-top: 5px;">
+                                <span class="card black">?</span>
+                                <span class="card black">?</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="poker-seat seat-2">
+                        <div class="player-card">
+                            <div class="player-name">PokerPro88</div>
+                            <div class="player-chips">₿128.50</div>
+                            <div style="margin-top: 5px;">
+                                <span class="card black">?</span>
+                                <span class="card black">?</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="poker-seat seat-3">
+                        <div class="player-card">
+                            <div class="player-name">LuckySeven</div>
+                            <div class="player-chips">₿67.80</div>
+                            <div style="margin-top: 5px;">
+                                <span class="card black">?</span>
+                                <span class="card black">?</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="poker-seat seat-4">
+                        <div class="player-card" style="border: 3px solid #4caf50;">
+                            <div class="player-name">YOU</div>
+                            <div class="player-chips">₿99.90</div>
+                            <div style="margin-top: 5px;">
+                                <span class="card red">A♥</span>
+                                <span class="card red">K♦</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="poker-seat seat-5">
+                        <div class="player-card">
+                            <div class="player-name">CryptoKid</div>
+                            <div class="player-chips">₿34.60</div>
+                            <div style="margin-top: 5px;">
+                                <span class="card black">?</span>
+                                <span class="card black">?</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="poker-controls">
+                    <div style="margin-bottom: 10px; font-size: 12px;">
+                        <strong>Your Turn:</strong> PokerPro88 raised to ₿0.40
+                    </div>
+
+                    <div>
+                        <button class="action-fold">Fold</button>
+                        <button class="action-call">Call ₿0.40</button>
+                        <button class="action-raise">Raise to ₿0.80</button>
+                        <button class="action-raise">All In (₿99.90)</button>
+                    </div>
+
+                    <div style="margin-top: 15px; font-size: 11px;">
+                        <label><input type="checkbox"> Sit Out Next Hand</label>
+                        <label style="margin-left: 15px;"><input type="checkbox"> Auto-Fold</label>
+                        <label style="margin-left: 15px;"><input type="checkbox"> Auto-Call</label>
+                    </div>
+
+                    <div style="margin-top: 10px;">
+                        <button>Leave Table</button>
+                        <button>Add Chips</button>
+                        <button>Chat</button>
+                    </div>
+                </div>
+
+                <div class="section-title">About Bitcoin Poker</div>
+                <p style="font-size: 11px; line-height: 1.6; padding: 10px; background: #fffef0; border: 1px solid #ccc;">
+                    <strong>Peer-to-Peer Gaming:</strong> This poker implementation was designed to enable trustless,
+                    peer-to-peer gambling using Bitcoin. The game state would be verified cryptographically by all players,
+                    with the pot automatically distributed to winners through multi-signature transactions. No central house or
+                    dealer required - just players, cryptography, and Bitcoin.
+                </p>
+
+                <div style="margin-top: 15px; padding: 10px; background: #ffe0e0; border: 1px solid #ff9999; font-size: 11px;">
+                    ⚠️ <strong>Note:</strong> This poker interface was designed in Bitcoin v0.01 alpha but never fully implemented.
+                    The UI framework exists in the source code (CPokerLobbyDialogBase and CPokerDialogBase classes in uibase.h),
+                    but the game logic was not completed in this early version.
+                </div>
+            </div>
+        </div>
+
+        <div class="status-bar">
+            <span>⚡ 4 connections</span>
+            <span>📦 12,546 blocks</span>
+            <span>⛏️ 0 transactions</span>
+        </div>
+    </div>
+
+    <script>
+        // Tab switching functionality
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs and contents
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+
+                // Add active class to clicked tab and corresponding content
+                tab.classList.add('active');
+                const tabId = tab.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+
+        // Animate block count (simulating blockchain sync)
+        let blockCount = 12546;
+        setInterval(() => {
+            blockCount++;
+            document.querySelector('.status-bar span:nth-child(2)').textContent = `📦 ${blockCount.toLocaleString()} blocks`;
+        }, 5000);
+    </script>
+</body>
+</html>
